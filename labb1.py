@@ -3,13 +3,12 @@ import scipy.integrate as integrate
 import matplotlib.pyplot as plt
 
 ############## UPPG 4 ##############
-L, tol= integrate.quad(lambda t:np.sqrt(1+(0.2*(t**2))), -5, 5)
-# print(L)
-# print(tol)
-
+L, tol= integrate.quad(lambda t:np.sqrt(1+(0.04*(t**2))), -5, 5)
+print(L)
+print(tol)
 ####################################
  
- 
+
 ############## UPPG 3 ##############
 t = np.linspace(0, 4*np.pi, 100); 
 x = (5*t)-(5*np.sin(t)); 
@@ -24,8 +23,8 @@ plt.grid()
 
 # L, tol= integrate.quad(lambda t:np.sqrt((5-5*np.cos(t))**2 + (5*np.sin(t))**2), 0, 4*np.pi)
 L, tol= integrate.quad(lambda t:np.sqrt(50-50*np.cos(t)), 0, 4*np.pi)
-print(L)
-print(tol)
+# print(L)
+# print(tol)
 #################################### 
 
 
