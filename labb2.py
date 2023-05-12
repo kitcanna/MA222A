@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # --------------- UPPG 3 ---------------
 m = k = A = 1
 w0 = np.sqrt(k/m)
-w = [1.0, 0.9, 0.8]
+w = [w0, 0.9, 0.8, 0.05]
 
 fig ,ax = plt.subplots()
 
@@ -19,11 +19,11 @@ for value in w:
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.legend(fontsize=14)
-ax.set_xlabel('x',fontsize=12)
-ax.set_ylabel('y',fontsize=12)
+ax.set_xlabel('Tid (s)',fontsize=12)
+ax.set_ylabel('Amplitudförskjutning',fontsize=12)
 ax.tick_params(labelsize=10)
 plt.grid()
-plt.title("Title", fontsize=10)
+plt.title("Inhomogen oscillator med extern kraft", fontsize=10)
 plt.show()
 # ----------------------------------------
 
